@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth Humor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/Favicon.png">
+    <script src="embedelement.js"></script>
+
+    <style>
+    
+    </style>
+
+</head>
+<body>
+    <header>
+        <center>
+            <img src="assets/temp-logo.png" alt="Logo" height="100px">
+        </center>
+    </header>
+    <div class="page-container">
+            
+        <div class="navbar-separator">
+            <div id="sidebar" class="sidebar"></div>
+            <script>
+                $(function(){
+                    $("#sidebar").load("navbar.html");
+                });
+            </script>
+            
+
+            <div class="main-content">
+                <center><h1>HOW TO PLAY</h1></center>
+                <p>
+                    As the game lacks a proper tutorial at this moment, this channel serves as a brief explanation on how to play.
+                </p>
+                <h2>BASIC</h2>
+                <ul>
+                    <li>The game is split into 4 floors, each with a different set of daemons. Players navigate through the floor from the icons on the bottom layer, all the way to the top layer where the boss of the floor is. Clearing an icon on the map unlocks all the subsequent icons it leads to.</li>
+                    <li>The player earns Hel (money) based on the number of individual enemies defeated.</li>
+                </ul>
+                <h2>COMBAT</h2>
+                <ul>
+                    <li>In battle, the player has a number of turn icons in the top left of the screen equal to the number of characters on their team. The player and enemy sides can continuously perform turns as long as they have icons remaining, after which the next side takes their turn with their own icons.</li>
+                    <li>Attacks which are STR-based have a chance of being critical hits, with the critical hit rate rising based on the difference between the attacker and target's LUK stats.</li>
+                    <li>When a character hits an enemy's weaknesses or performs a critical hit, a turn icon flashes and only "half" the icon is consumed, allowing both player and enemy characters to extend their turns.</li>
+                </ul>
+                <br></br>
+                <h2>STATS</h2>
+                <ul>
+                    <li>Character stats serve the following functions:</li>
+                    <ul>
+                        <li>VGR and INT determine Max HP and Max MP, respectively.</li>
+                        <li>STR and MAG determine damage dealt by STR-based and MAG-based skills.</li>
+                        <li>SPD determines evasion rate, while LUK determines critical hit rate. The effect of these is based on the difference between the user and target's respective stats.</li>
+                    </ul>
+                </ul>
+                <br></br>
+                <h2>RECRUITING CHARACTERS</h2>
+                <ul>
+                    <li>The "Talk" option in battle, when succeeded, allows the player to ask an enemy for MP, recruit them to their team, or fuse them with a character already in their party.</li>
+                    <li>The likelihood of the Talk option succeeding increases the lower the target's HP is. Below a certain threshold, Talk is guaranteed to succeed.</li>
+                    <li>Recruiting a daemon will have it retain the Artifacts of the replaced daemon, while fusing a new daemon will allow it to take both the Artifacts and skills of the "parent" daemons.</li>
+                </ul>
+                <br></br>
+                <h2>TECHNICAL</h2>
+                <ul>
+                    <li>Keyboard and gamepad work for the game (with most players as of writing having a preference for gamepad), though there is very little mouse support at the moment.</li>
+                    <li>The game is primarily designed for a 16:9 display, but should function fine on Steam Deck and Ultrawide displays without any black bars. However, text size is not adjusted for Steam Deck at the moment and some players may have difficulty reading certain text.</li>
+                    <li>If the resolution/game window ever seems to force itself into an incorrect size, try pressing F12.</li>
+                </ul>
+                
+            </div>
+
+        </div>
+
+    </div>
+        
+</body>
+</html>

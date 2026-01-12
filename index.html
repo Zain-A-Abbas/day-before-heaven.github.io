@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Fifth Humor</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/Favicon.png">
+    <script src="embedelement.js"></script>
 
     <style>
     
@@ -20,21 +22,17 @@
     <div class="page-container">
             
         <div class="navbar-separator">
-            <!--
-            <div class="sidebar">
-                
-                <button class="navbutton">
-                    <span class="navbutton-text">HOME</span>
-                </button>
-                <button class="navbutton">
-                    <span class="navbutton-text">ABOUT</span>
-                </button>
-            </div>
-             -->
+            <div id="sidebar" class="sidebar"></div>
+            <script>
+                $(function(){
+                    $("#sidebar").load("navbar.html");
+                });
+            </script>
+            
 
             <div class="main-content">
                 <center><h1>DAY BEFORE HEAVEN</h1></center>
-                <img src="assets/Battle.png" alt="Battle Screenshot" style="width:100%;">
+                <img src="assets/Battle.png" alt="Battle Screenshot" style="width:auto; max-width: 100%;">
 
                 <h2>ABOUT</h2>
                 <p>
@@ -56,6 +54,13 @@
                     <li>Over 90 chaotic artifacts to obtain and equip on characters!</li>
                     <li>Experience the power progression of a full turn-based RPG in just one hour!</li>
                 </ul>
+
+
+                <img src="assets/weakness-hit.gif" alt="Battle Gif" style="width:auto; max-width: 100%;">
+
+                <a class="navbutton" href="play.html">
+                    DOWNLOAD
+                </a>
             </div>
 
         </div>
